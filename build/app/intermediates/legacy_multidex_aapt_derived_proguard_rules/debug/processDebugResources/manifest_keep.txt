@@ -1,0 +1,4 @@
+# Referenced at C:\MKM\griyabayar-project\griyabayar\build\app\intermediates\merged_manifests\debug\AndroidManifest.xml:47
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\MKM\griyabayar-project\griyabayar\build\app\intermediates\merged_manifests\debug\AndroidManifest.xml:47
+-keep class com.example.griyabayar.Application { <init>(); }

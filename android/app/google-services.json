@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "554311959396",
+    "firebase_url": "https://griyamobile-e208a.firebaseio.com",
+    "project_id": "griyamobile-e208a",
+    "storage_bucket": "griyamobile-e208a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554311959396:android:ae67d85fb40ee6c95bb071",
+        "android_client_info": {
+          "package_name": "com.example.griyabayar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554311959396-nm9snsof5s910unh5ts68uo25d8hif7o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.griyabayar",
+            "certificate_hash": "cce78552592703e8492293e8925d1cce13a336e9"
+          }
+        },
+        {
+          "client_id": "554311959396-9n0k7k4pk0iuj03d62at9erf34is5io0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyrqLYWPpBnKCyfM3TKnBf_7R23m9OLLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554311959396-9n0k7k4pk0iuj03d62at9erf34is5io0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

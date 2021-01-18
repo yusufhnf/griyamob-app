@@ -1,0 +1,512 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.griyabayar"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml
+10    <!--
+11         io.flutter.app.FlutterApplication is an android.app.Application that
+12         calls FlutterMain.startInitialization(this); in its onCreate method.
+13         In most cases you can leave this as-is, but you if you want to provide
+14         additional functionality it is fine to subclass or reimplement
+15         FlutterApplication and put your custom class here.
+16    -->
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:8:10-70
+17-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:8:27-67
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[:connectivity] C:\MKM\griyabayar-project\griyabayar\build\connectivity\intermediates\library_manifest\release\AndroidManifest.xml:7:5-79
+18-->[:connectivity] C:\MKM\griyabayar-project\griyabayar\build\connectivity\intermediates\library_manifest\release\AndroidManifest.xml:7:22-76
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:23:5-67
+19-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:23:22-64
+20    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+20-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:24:5-68
+20-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:24:22-65
+21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+21-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:26:5-82
+21-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:26:22-79
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+22-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
+23    <uses-feature
+23-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:25:5-27:36
+24        android:name="android.hardware.camera"
+24-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:26:9-47
+25        android:required="false" />
+25-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:27:9-33
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:28:5-30:36
+27        android:name="android.hardware.camera.front"
+27-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:29:9-53
+28        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+28-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:30:9-33
+29    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+30    <uses-feature
+30-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:33:5-35:36
+31        android:name="android.hardware.camera.autofocus"
+31-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:34:9-57
+32        android:required="false" />
+32-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:35:9-33
+33    <uses-feature
+33-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:36:5-38:36
+34        android:name="android.hardware.camera.flash"
+34-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:37:9-53
+35        android:required="false" />
+35-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:38:9-33
+36    <uses-feature
+36-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:39:5-41:36
+37        android:name="android.hardware.screen.landscape"
+37-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:40:9-57
+38        android:required="false" />
+38-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:41:9-33
+39    <uses-feature
+39-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:42:5-44:36
+40        android:name="android.hardware.wifi"
+40-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:43:9-45
+41        android:required="false" />
+41-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:44:9-33
+42
+43    <application
+43-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:9:5-55:19
+44        android:name="com.example.griyabayar.Application"
+44-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:10:9-36
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\c308531dd02f783015ed0db3e7d4037f\core-1.2.0\AndroidManifest.xml:24:18-86
+46        android:icon="@mipmap/ic_launcher"
+46-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:12:9-43
+47        android:label="GriyaMobile" >
+47-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:11:9-36
+48        <activity
+48-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:13:9-49:20
+49            android:name="com.example.griyabayar.MainActivity"
+49-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:14:13-41
+50            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+50-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:17:13-163
+51            android:hardwareAccelerated="true"
+51-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:18:13-47
+52            android:launchMode="singleTop"
+52-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:15:13-43
+53            android:resizeableActivity="false"
+53-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:19:13-47
+54            android:theme="@style/LaunchTheme"
+54-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:16:13-47
+55            android:windowSoftInputMode="adjustResize" >
+55-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:20:13-55
+56
+57            <!--
+58                 Specifies an Android theme to apply to this Activity as soon as
+59                 the Android process has started. This theme is visible to the user
+60                 while the Flutter UI initializes. After that, this theme continues
+61                 to determine the Window background behind the Flutter UI.
+62            -->
+63            <meta-data
+63-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:25:13-27:58
+64                android:name="com.google.firebase.messaging.default_notification_icon"
+64-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:26:17-87
+65                android:resource="@mipmap/ic_launcher" />
+65-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:27:17-55
+66            <meta-data
+66-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:28:13-31:17
+67                android:name="io.flutter.embedding.android.NormalTheme"
+67-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:29:15-70
+68                android:resource="@style/NormalTheme" />
+68-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:30:15-52
+69            <!--
+70                 Displays an Android View that continues showing the launch screen
+71                 Drawable until Flutter paints its first frame, then this splash
+72                 screen fades out. A splash screen is useful to avoid any visual
+73                 gap between the end of Android's launch screen and the painting of
+74                 Flutter's first frame.
+75            -->
+76            <meta-data
+76-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:37:13-40:17
+77                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+77-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:38:15-79
+78                android:resource="@drawable/launch_background" />
+78-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:39:15-61
+79
+80            <intent-filter>
+80-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:41:13-44:29
+81                <action android:name="android.intent.action.MAIN" />
+81-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:42:17-68
+81-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:42:25-66
+82
+83                <category android:name="android.intent.category.LAUNCHER" />
+83-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:43:17-76
+83-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:43:27-74
+84            </intent-filter>
+85            <intent-filter>
+85-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:45:13-48:29
+86                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+86-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:46:17-69
+86-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:46:25-66
+87
+88                <category android:name="android.intent.category.DEFAULT" />
+88-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:47:17-76
+88-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:47:27-73
+89            </intent-filter>
+90        </activity>
+91        <!--
+92             Don't delete the meta-data below.
+93             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+94        -->
+95        <meta-data
+95-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:52:9-54:33
+96            android:name="flutterEmbedding"
+96-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:53:13-44
+97            android:value="2" />
+97-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:54:13-30
+98
+99        <service android:name="io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService" >
+99-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+99-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:18-101
+100            <intent-filter>
+100-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:29
+101                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+101-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:10:17-78
+101-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:10:25-75
+102            </intent-filter>
+103        </service>
+104        <service
+104-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:13:9-17:19
+105            android:name="com.google.firebase.components.ComponentDiscoveryService"
+105-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:13:18-89
+106            android:directBootAware="true"
+106-->[com.google.firebase:firebase-common:19.4.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\f91c5554ae1a3af48a99ee3ea64f3b43\jetified-firebase-common-19.4.0\AndroidManifest.xml:35:13-43
+107            android:exported="false" >
+107-->[com.google.firebase:firebase-messaging-ktx:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\6beec6759a70d593d11101bcde02cbe0\firebase-messaging-ktx-21.0.0\AndroidManifest.xml:28:13-37
+108            <meta-data
+108-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:14:13-16:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar"
+109-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:15:17-127
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:16:17-82
+111            <meta-data
+111-->[:firebase_auth] C:\MKM\griyabayar-project\griyabayar\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+112                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+112-->[:firebase_auth] C:\MKM\griyabayar-project\griyabayar\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[:firebase_auth] C:\MKM\griyabayar-project\griyabayar\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+114            <meta-data
+114-->[:firebase_core] C:\MKM\griyabayar-project\griyabayar\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+115                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+115-->[:firebase_core] C:\MKM\griyabayar-project\griyabayar\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[:firebase_core] C:\MKM\griyabayar-project\griyabayar\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-messaging-ktx:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\6beec6759a70d593d11101bcde02cbe0\firebase-messaging-ktx-21.0.0\AndroidManifest.xml:29:13-31:85
+118                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+118-->[com.google.firebase:firebase-messaging-ktx:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\6beec6759a70d593d11101bcde02cbe0\firebase-messaging-ktx-21.0.0\AndroidManifest.xml:30:17-126
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-messaging-ktx:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\6beec6759a70d593d11101bcde02cbe0\firebase-messaging-ktx-21.0.0\AndroidManifest.xml:31:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\1f6b9b5499af73700fd7f27f62d0b030\firebase-analytics-ktx-18.0.0\AndroidManifest.xml:11:13-13:85
+121                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+121-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\1f6b9b5499af73700fd7f27f62d0b030\firebase-analytics-ktx-18.0.0\AndroidManifest.xml:12:17-126
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\1f6b9b5499af73700fd7f27f62d0b030\firebase-analytics-ktx-18.0.0\AndroidManifest.xml:13:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-auth-ktx:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\1596028ffcca3bc2165babcfae1c72ae\firebase-auth-ktx-20.0.1\AndroidManifest.xml:11:13-13:85
+124                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+124-->[com.google.firebase:firebase-auth-ktx:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\1596028ffcca3bc2165babcfae1c72ae\firebase-auth-ktx-20.0.1\AndroidManifest.xml:12:17-116
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-auth-ktx:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\1596028ffcca3bc2165babcfae1c72ae\firebase-auth-ktx-20.0.1\AndroidManifest.xml:13:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-common-ktx:19.4.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\907074f5c7d1862aa9b9b5cc2b84f106\firebase-common-ktx-19.4.0\AndroidManifest.xml:15:13-17:85
+127                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+127-->[com.google.firebase:firebase-common-ktx:19.4.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\907074f5c7d1862aa9b9b5cc2b84f106\firebase-common-ktx-19.4.0\AndroidManifest.xml:16:17-113
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-common-ktx:19.4.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\907074f5c7d1862aa9b9b5cc2b84f106\firebase-common-ktx-19.4.0\AndroidManifest.xml:17:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:77:13-79:85
+130                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+130-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:78:17-109
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:79:17-82
+132            <meta-data
+132-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\d3c37bb0aec59a1f26f7c6717399d19a\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:39:13-41:85
+133                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+133-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\d3c37bb0aec59a1f26f7c6717399d19a\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:40:17-119
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\d3c37bb0aec59a1f26f7c6717399d19a\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:41:17-82
+135            <meta-data
+135-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:32:13-34:85
+136                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+136-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:33:17-96
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:34:17-82
+138            <meta-data
+138-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\865753259c630ac61440a0d5655870f0\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+139                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+139-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\865753259c630ac61440a0d5655870f0\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\865753259c630ac61440a0d5655870f0\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+141            <meta-data
+141-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\966bfc971e01bc58d1df2f878e7d685f\play-services-measurement-api-18.0.0\AndroidManifest.xml:30:13-32:85
+142                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+142-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\966bfc971e01bc58d1df2f878e7d685f\play-services-measurement-api-18.0.0\AndroidManifest.xml:31:17-139
+143                android:value="com.google.firebase.components.ComponentRegistrar" />
+143-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\966bfc971e01bc58d1df2f878e7d685f\play-services-measurement-api-18.0.0\AndroidManifest.xml:32:17-82
+144            <meta-data
+144-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9b1c872e750af78bd92085b5304fea24\firebase-installations-16.3.4\AndroidManifest.xml:18:13-20:85
+145                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+145-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9b1c872e750af78bd92085b5304fea24\firebase-installations-16.3.4\AndroidManifest.xml:19:17-127
+146                android:value="com.google.firebase.components.ComponentRegistrar" />
+146-->[com.google.firebase:firebase-installations:16.3.4] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9b1c872e750af78bd92085b5304fea24\firebase-installations-16.3.4\AndroidManifest.xml:20:17-82
+147        </service>
+148
+149        <provider
+149-->[:printing] C:\MKM\griyabayar-project\griyabayar\build\printing\intermediates\library_manifest\release\AndroidManifest.xml:8:9-16:20
+150            android:name="net.nfet.flutter.printing.PrintFileProvider"
+150-->[:printing] C:\MKM\griyabayar-project\griyabayar\build\printing\intermediates\library_manifest\release\AndroidManifest.xml:9:13-71
+151            android:authorities="com.example.griyabayar.flutter.printing"
+151-->[:printing] C:\MKM\griyabayar-project\griyabayar\build\printing\intermediates\library_manifest\release\AndroidManifest.xml:10:13-68
+152            android:exported="false"
+152-->[:printing] C:\MKM\griyabayar-project\griyabayar\build\printing\intermediates\library_manifest\release\AndroidManifest.xml:11:13-37
+153            android:grantUriPermissions="true" >
+153-->[:printing] C:\MKM\griyabayar-project\griyabayar\build\printing\intermediates\library_manifest\release\AndroidManifest.xml:12:13-47
+154            <meta-data
+154-->[:printing] C:\MKM\griyabayar-project\griyabayar\build\printing\intermediates\library_manifest\release\AndroidManifest.xml:13:13-15:71
+155                android:name="android.support.FILE_PROVIDER_PATHS"
+155-->[:printing] C:\MKM\griyabayar-project\griyabayar\build\printing\intermediates\library_manifest\release\AndroidManifest.xml:14:17-67
+156                android:resource="@xml/flutter_printing_file_paths" />
+156-->[:printing] C:\MKM\griyabayar-project\griyabayar\build\printing\intermediates\library_manifest\release\AndroidManifest.xml:15:17-68
+157        </provider>
+158
+159        <activity
+159-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:27:9-44:20
+160            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+160-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:28:13-80
+161            android:excludeFromRecents="true"
+161-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:29:13-46
+162            android:exported="true"
+162-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:30:13-36
+163            android:launchMode="singleTask"
+163-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:31:13-44
+164            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+164-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:32:13-72
+165            <intent-filter>
+165-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:33:13-43:29
+166                <action android:name="android.intent.action.VIEW" />
+166-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
+166-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
+167
+168                <category android:name="android.intent.category.DEFAULT" />
+168-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:47:17-76
+168-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:47:27-73
+169                <category android:name="android.intent.category.BROWSABLE" />
+169-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
+169-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
+170
+171                <data
+171-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
+172                    android:host="firebase.auth"
+172-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:40:21-49
+173                    android:path="/"
+173-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:41:21-37
+174                    android:scheme="genericidp" />
+174-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
+175            </intent-filter>
+176        </activity>
+177        <activity
+177-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:45:9-62:20
+178            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+178-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:46:13-79
+179            android:excludeFromRecents="true"
+179-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:47:13-46
+180            android:exported="true"
+180-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:48:13-36
+181            android:launchMode="singleTask"
+181-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:49:13-44
+182            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+182-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:50:13-72
+183            <intent-filter>
+183-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:51:13-61:29
+184                <action android:name="android.intent.action.VIEW" />
+184-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
+184-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
+185
+186                <category android:name="android.intent.category.DEFAULT" />
+186-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:47:17-76
+186-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:47:27-73
+187                <category android:name="android.intent.category.BROWSABLE" />
+187-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
+187-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
+188
+189                <data
+189-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
+190                    android:host="firebase.auth"
+190-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:40:21-49
+191                    android:path="/"
+191-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:41:21-37
+192                    android:scheme="recaptcha" />
+192-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
+193            </intent-filter>
+194        </activity>
+195
+196        <service
+196-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:64:9-73:19
+197            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+197-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:65:13-101
+198            android:enabled="true"
+198-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:66:13-35
+199            android:exported="false" >
+199-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:67:13-37
+200            <intent-filter>
+200-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:68:13-72:29
+201                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+201-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:17-89
+201-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\087e1001f022cf58b3f02569559b8d77\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:25-86
+202
+203                <category android:name="android.intent.category.DEFAULT" />
+203-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:47:17-76
+203-->C:\MKM\griyabayar-project\griyabayar\android\app\src\main\AndroidManifest.xml:47:27-73
+204            </intent-filter>
+205        </service>
+206        <!--
+207             FirebaseMessagingService performs security checks at runtime,
+208             but set to not exported to explicitly avoid allowing another app to call it.
+209        -->
+210        <service
+210-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\d3c37bb0aec59a1f26f7c6717399d19a\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:28:9-35:19
+211            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+211-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\d3c37bb0aec59a1f26f7c6717399d19a\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:29:13-82
+212            android:directBootAware="true"
+212-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\d3c37bb0aec59a1f26f7c6717399d19a\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:30:13-43
+213            android:exported="false" >
+213-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\d3c37bb0aec59a1f26f7c6717399d19a\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:31:13-37
+214            <intent-filter android:priority="-500" >
+214-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:29
+215                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+215-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:10:17-78
+215-->[:firebase_messaging] C:\MKM\griyabayar-project\griyabayar\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:10:25-75
+216            </intent-filter>
+217        </service>
+218
+219        <receiver
+219-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:37:9-44:20
+220            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+220-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:38:13-78
+221            android:exported="true"
+221-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:39:13-36
+222            android:permission="com.google.android.c2dm.permission.SEND" >
+222-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:40:13-73
+223            <intent-filter>
+223-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:41:13-43:29
+224                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+224-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:42:17-81
+224-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\b9b9512364745ebd6543e7e56dd95950\firebase-iid-21.0.0\AndroidManifest.xml:42:25-78
+225            </intent-filter>
+226        </receiver>
+227
+228        <provider
+228-->[com.google.firebase:firebase-common:19.4.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\f91c5554ae1a3af48a99ee3ea64f3b43\jetified-firebase-common-19.4.0\AndroidManifest.xml:26:9-31:39
+229            android:name="com.google.firebase.provider.FirebaseInitProvider"
+229-->[com.google.firebase:firebase-common:19.4.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\f91c5554ae1a3af48a99ee3ea64f3b43\jetified-firebase-common-19.4.0\AndroidManifest.xml:27:13-77
+230            android:authorities="com.example.griyabayar.firebaseinitprovider"
+230-->[com.google.firebase:firebase-common:19.4.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\f91c5554ae1a3af48a99ee3ea64f3b43\jetified-firebase-common-19.4.0\AndroidManifest.xml:28:13-72
+231            android:directBootAware="true"
+231-->[com.google.firebase:firebase-common:19.4.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\f91c5554ae1a3af48a99ee3ea64f3b43\jetified-firebase-common-19.4.0\AndroidManifest.xml:29:13-43
+232            android:exported="false"
+232-->[com.google.firebase:firebase-common:19.4.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\f91c5554ae1a3af48a99ee3ea64f3b43\jetified-firebase-common-19.4.0\AndroidManifest.xml:30:13-37
+233            android:initOrder="100" />
+233-->[com.google.firebase:firebase-common:19.4.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\f91c5554ae1a3af48a99ee3ea64f3b43\jetified-firebase-common-19.4.0\AndroidManifest.xml:31:13-36
+234
+235        <activity
+235-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\1523e3e6df3cc4362681ac3c2f7c0f06\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+236            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+236-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\1523e3e6df3cc4362681ac3c2f7c0f06\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+237            android:exported="false"
+237-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\1523e3e6df3cc4362681ac3c2f7c0f06\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+238            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+238-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\1523e3e6df3cc4362681ac3c2f7c0f06\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+239
+240        <receiver
+240-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:29:9-33:20
+241            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+241-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:30:13-85
+242            android:enabled="true"
+242-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:31:13-35
+243            android:exported="false" >
+243-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:32:13-37
+244        </receiver>
+245
+246        <service
+246-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:35:9-38:40
+247            android:name="com.google.android.gms.measurement.AppMeasurementService"
+247-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:36:13-84
+248            android:enabled="true"
+248-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:37:13-35
+249            android:exported="false" />
+249-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:38:13-37
+250        <service
+250-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:39:9-43:72
+251            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+251-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:40:13-87
+252            android:enabled="true"
+252-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:41:13-35
+253            android:exported="false"
+253-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:42:13-37
+254            android:permission="android.permission.BIND_JOB_SERVICE" />
+254-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\da01509f818dc2e3a4bab8a59b98fe81\play-services-measurement-18.0.0\AndroidManifest.xml:43:13-69
+255
+256        <meta-data
+256-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\047602b7bb59a58741ae680515e4697c\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+257            android:name="com.google.android.gms.version"
+257-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\047602b7bb59a58741ae680515e4697c\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+258            android:value="@integer/google_play_services_version" />
+258-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\047602b7bb59a58741ae680515e4697c\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+259
+260        <service
+260-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\504b5dd8066745cf9694ef1e0dd507d0\transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+261            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+261-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\504b5dd8066745cf9694ef1e0dd507d0\transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+262            android:exported="false" >
+262-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\504b5dd8066745cf9694ef1e0dd507d0\transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+263            <meta-data
+263-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\504b5dd8066745cf9694ef1e0dd507d0\transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+264                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+264-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\504b5dd8066745cf9694ef1e0dd507d0\transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+265                android:value="cct" />
+265-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\504b5dd8066745cf9694ef1e0dd507d0\transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+266        </service>
+267        <service
+267-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9b0831bc6c0c8f96ea203c10095ba760\transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+268            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+268-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9b0831bc6c0c8f96ea203c10095ba760\transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+269            android:exported="false"
+269-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9b0831bc6c0c8f96ea203c10095ba760\transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+270            android:permission="android.permission.BIND_JOB_SERVICE" >
+270-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9b0831bc6c0c8f96ea203c10095ba760\transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+271        </service>
+272
+273        <receiver
+273-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9b0831bc6c0c8f96ea203c10095ba760\transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+274            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+274-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9b0831bc6c0c8f96ea203c10095ba760\transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+275            android:exported="false" />
+275-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9b0831bc6c0c8f96ea203c10095ba760\transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+276
+277        <activity
+277-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:47:9-53:63
+278            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+278-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:48:13-74
+279            android:clearTaskOnLaunch="true"
+279-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:49:13-45
+280            android:screenOrientation="sensorLandscape"
+280-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:50:13-56
+281            android:stateNotNeeded="true"
+281-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:51:13-42
+282            android:theme="@style/zxing_CaptureTheme"
+282-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:52:13-54
+283            android:windowSoftInputMode="stateAlwaysHidden" />
+283-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\MKM\.gradle\caches\transforms-2\files-2.1\9eb58f11c70cb72d8633b768fc29ea05\zxing-android-embedded-4.1.0\AndroidManifest.xml:53:13-60
+284    </application>
+285
+286</manifest>
